@@ -15,7 +15,7 @@ static const int swallowfloating    = 0;        /* 1 means swallow floating wind
 static const int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10", "JoyPixels:pixelsize=20:antialias=true:autohint=true"  };
+static const char *fonts[]          = { "monospace:size=10", "JoyPixels:pixelsize=14:antialias=true:autohint=true"  };
 static char dmenufont[]             = "monospace:size=10";
 static char normbgcolor[]           = "#6C5B7B";
 static char normbordercolor[]       = "#355C7D";
@@ -33,8 +33,8 @@ typedef struct {
 	const char *name;
 	const void *cmd;
 } Sp;
-const char *spcmd1[] = {TERMINAL, "-n", "spterm", "-f", "monospace:size=36", "-g", "120x34", NULL };
-const char *spcmd2[] = {TERMINAL, "-n", "spcalc", "-f", "monospace:size=36", "-g", "50x20", "-e", "bc", "-lq", NULL };
+const char *spcmd1[] = {TERMINAL, "-n", "spterm", "-f", "monospace:size=10", "-g", "120x34", NULL };
+const char *spcmd2[] = {TERMINAL, "-n", "spcalc", "-f", "monospace:size=10", "-g", "50x20", "-e", "bc", "-lq", NULL };
 static Sp scratchpads[] = {
 	/* name          cmd  */
 	{"spterm",      spcmd1},
@@ -103,7 +103,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]  = { TERMINAL, NULL };
+static const char *termcmd[]  = { TERMINAL, "-f", "monospace:size=10", NULL };
 
 #include <X11/XF86keysym.h>
 #include "shiftview.c"
