@@ -7,8 +7,8 @@
 /* appearance */
 static const unsigned int borderpx  = 30;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
-static const unsigned int gappih    = 100;       /* horiz inner gap between windows */
-static const unsigned int gappiv    = 30;       /* vert inner gap between windows */
+static const unsigned int gappih    = 30;       /* horiz inner gap between windows */
+static const unsigned int gappiv    = 100;       /* vert inner gap between windows */
 static const unsigned int gappoh    = 150;       /* horiz outer gap between windows and screen edge */
 static const unsigned int gappov    = 140;       /* vert outer gap between windows and screen edge */
 static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
