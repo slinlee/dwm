@@ -1,4 +1,4 @@
-# Luke's build of dwm
+# ~Luke~ Slin's build of dwm
 
 ## FAQ
 
